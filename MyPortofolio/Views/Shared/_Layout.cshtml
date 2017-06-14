@@ -17,14 +17,17 @@
                     </a></p>
                 </div>
                 <div class="float-right">
+                    <section id="page_description">
+                        @Html.Partial("_NoLogin")
+                    </section>
                     <section id="login">
                         @Html.Partial("_LoginPartial")
                     </section>
                     <nav>
                         <ul id="menu">
                             <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
                             <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
                         </ul>
                     </nav>
                 </div>
