@@ -1,6 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
+using System.Data.SqlClient;
 
 namespace MyPortofolio.Models
 {
@@ -12,6 +14,7 @@ namespace MyPortofolio.Models
         }
 
         public DbSet<UserProfile> UserProfiles { get; set; }
+
     }
 
     [Table("UserProfile")]
@@ -21,6 +24,9 @@ namespace MyPortofolio.Models
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
         public string UserName { get; set; }
+        public string PassWord { get; set;  }
+        public string Email { get; set; }
+        public UserType Type { get; set; }
     }
 
     public class RegisterExternalLoginModel
