@@ -1,4 +1,4 @@
-﻿@model MyPortofolio.Models.RegisterModel
+﻿@model MyPortofolio.Models.UserAccount
 @{
     ViewBag.Title = "Register";
 }
@@ -14,21 +14,43 @@
 
     <fieldset>
         <legend>Registration Form</legend>
-        <ol>
-            <li>
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.ConfirmPassword)
-                @Html.PasswordFor(m => m.ConfirmPassword)
-            </li>
-        </ol>
-        <input type="submit" value="Register" />
+        <div class="Editor-label">
+           @Html.LabelFor(m => m.UserName)
+         </div>
+         <div class="Editor-field">
+           @Html.TextBoxFor(m => m.UserName)
+           @Html.ValidationMessageFor(m => m.UserName)
+        </div>
+        <div class="Editor-label">
+            @Html.LabelFor(m => m.Password)
+        </div>
+        <div class="Editor-field">
+            @Html.PasswordFor(m => m.Password)
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+        <div class="Editor-label">
+            @Html.LabelFor(m => m.ConfirmPassword)  
+        </div>
+        <div class="Editor-field">
+            @Html.PasswordFor(m => m.ConfirmPassword)
+            @Html.ValidationMessageFor(m => m.ConfirmPassword)
+        </div>
+        <div class="Editor-label">
+            @Html.LabelFor(m => m.Fullname)  
+        </div>
+        <div class="Editor-field">
+            @Html.TextBoxFor(m => m.Fullname)
+            @Html.ValidationMessageFor(m => m.Fullname)
+        </div>
+        <div class="Editor-label">
+            @Html.LabelFor(m => m.Email)  
+        </div>
+        <div class="Editor-field">
+            @Html.TextBoxFor(m => m.Email)
+        </div>
+        <P>
+            <input type="submit" value="Register" />
+        </P>  
     </fieldset>
 }
 
