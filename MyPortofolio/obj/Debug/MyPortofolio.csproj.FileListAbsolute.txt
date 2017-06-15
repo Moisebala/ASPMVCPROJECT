@@ -84,3 +84,5 @@ C:\Users\Balacite\Documents\Visual Studio 2012\Projects\MyPortofolio\MyASP\MyPor
 C:\Users\Balacite\Documents\Visual Studio 2012\Projects\MyPortofolio\MyASP\MyPortofolio\obj\Debug\MyPortofolio.dll
 C:\Users\Balacite\Documents\Visual Studio 2012\Projects\MyPortofolio\MyASP\MyPortofolio\obj\Debug\MyPortofolio.pdb
 C:\Users\Balacite\Documents\Visual Studio 2012\Projects\MyPortofolio\MyASP\MyPortofolio\obj\Debug\MyPortofolio.csprojResolveAssemblyReference.cache
+C:\Users\Balacite\Documents\Visual Studio 2012\Projects\MyPortofolio\MyASP\MyPortofolio\bin\EntityFramework.SqlServer.dll
+C:\Users\Balacite\Documents\Visual Studio 2012\Projects\MyPortofolio\MyASP\MyPortofolio\bin\EntityFramework.SqlServer.xml
